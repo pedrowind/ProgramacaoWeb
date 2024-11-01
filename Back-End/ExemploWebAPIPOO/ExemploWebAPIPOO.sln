@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploWebAPIPOO", "ExemploWebAPIPOO\ExemploWebAPIPOO.csproj", "{210AD094-BB86-4E2D-B394-5E9284FC9970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{210AD094-BB86-4E2D-B394-5E9284FC9970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210AD094-BB86-4E2D-B394-5E9284FC9970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210AD094-BB86-4E2D-B394-5E9284FC9970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210AD094-BB86-4E2D-B394-5E9284FC9970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CB8CB5C-C1A7-46E0-BB76-CDA3A5D92DB5}
+	EndGlobalSection
+EndGlobal
