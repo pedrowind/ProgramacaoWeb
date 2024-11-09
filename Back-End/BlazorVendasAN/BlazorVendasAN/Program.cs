@@ -1,8 +1,23 @@
 using BlazorVendasAN.Components;
+using BlazorVendasAN.Data.Context;
+using BlazorVendasAN.Service.Interface;
+using BlazorVendasAN.Service.Implementation;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<SQLServerContext>(options => options.UseSqlServer(connectionString));
+
+
 // Add services to the container.
+builder.Services.AddScoped<IFuncionarioService, FuncionarioService>();
+builder.Services.AddScoped<IPedidoService, PedidoService>();
+builder.Services.AddScoped<IProdutoService, ProdutoService>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IItemVendaService, ItemVendaService>();
+
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 

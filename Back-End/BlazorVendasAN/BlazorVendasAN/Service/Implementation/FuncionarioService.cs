@@ -1,6 +1,7 @@
 ﻿using BlazorVendasAN.Data.Context;
 using BlazorVendasAN.Entities;
 using BlazorVendasAN.Service.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorVendasAN.Service.Implementation
 {
@@ -13,34 +14,41 @@ namespace BlazorVendasAN.Service.Implementation
             _context = context;
         }
 
-        Task IFuncionarioService.AdicionarAsync(Funcionario funcionario)
+        async Task IFuncionarioService.AdicionarAsync(Funcionario funcionario)
         {
-            throw new NotImplementedException();
+            _context.funcionarios.Add(funcionario);
+            await _context.SaveChangesAsync();
         }
 
-        Task IFuncionarioService.AlterarAsync(Funcionario funcionario)
+        async Task IFuncionarioService.AlterarAsync(Funcionario funcionario)
         {
-            throw new NotImplementedException();
+            _context.funcionarios.Update(funcionario);
+            await _context.SaveChangesAsync();
         }
 
-        Task IFuncionarioService.ExcluirAsync(int id)
+        async Task IFuncionarioService.ExcluirAsync(int id)
         {
-            throw new NotImplementedException();
+            var funcionario = await _context.funcionarios.FindAsync(id);
+            if (funcionario != null)
+            {
+                _context.funcionarios.Remove(funcionario);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        Task<Funcionario> IFuncionarioService.ObterPorIdAsync(int id)
+        async Task<Funcionario> IFuncionarioService.ObterPorIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.funcionarios.FindAsync(id);
         }
 
-        Task<Funcionario> IFuncionarioService.ObterPorNomeAsync(string nome)
+        async Task<Funcionario> IFuncionarioService.ObterPorNomeAsync(string nome)
         {
-            throw new NotImplementedException();
+            return await _context.funcionarios.FindAsync(nome);
         }
 
-        Task<IEnumerable<Funcionario>> IFuncionarioService.ObterTodosAsync()
+        async Task<IEnumerable<Funcionario>> IFuncionarioService.ObterTodosAsync()
         {
-            throw new NotImplementedException();
+            return await _context.funcionarios.ToListAsync();
         }
     }
 }

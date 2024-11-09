@@ -10,5 +10,9 @@ namespace BlazorVendasAN.Data.Context
         }
 
         public DbSet<Funcionario> funcionarios { get; set; }
+        public DbSet<Cliente> clientes { get; set; }
+        public DbSet<Produto> produtos { get; set; }
+        public DbSet<ItemVenda> itensVenda { get; set; }
+        public DbSet<Pedido> pedidos { get; set; }
     }
 }
