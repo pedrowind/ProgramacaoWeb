@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pedro.bw\\Downloads\\BlazorVendasAN\\BlazorVendasAN\\BlazorVendasAN\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorVendasAN.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorVendasAN.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\pedro.bw\\Downloads\\BlazorVendasAN\\BlazorVendasAN\\BlazorVendasAN\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\pedro.bw\\Downloads\\BlazorVendasAN\\BlazorVendasAN\\BlazorVendasAN\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pedro.bw\\Downloads\\BlazorVendasAN\\BlazorVendasAN\\BlazorVendasAN\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pedro.bw\\Downloads\\BlazorVendasAN\\BlazorVendasAN\\BlazorVendasAN\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorVendasAN.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorVendasAN.props",
+      "PackagePath": "build\\BlazorVendasAN.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorVendasAN.props",
+      "PackagePath": "buildMultiTargeting\\BlazorVendasAN.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorVendasAN.props",
+      "PackagePath": "buildTransitive\\BlazorVendasAN.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
